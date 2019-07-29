@@ -103,7 +103,6 @@ ENV/
 
 .idea
 config.ini
-data
 logs
 .DS_Store
 .vscode
