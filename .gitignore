@@ -106,3 +106,5 @@ config.ini
 logs
 .DS_Store
 .vscode
+data
+!data/*.csv
