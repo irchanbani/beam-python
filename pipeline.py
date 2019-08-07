@@ -9,7 +9,7 @@ import config
 
 class PrintData(beam.DoFn):
     def process(self, element, *args, **kwargs):
-        return print("Data: {}".format(element))
+        print("Data: {}".format(element))
 
 
 class FilterData(beam.DoFn):
