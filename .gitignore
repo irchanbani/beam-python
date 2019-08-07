@@ -108,3 +108,4 @@ logs
 .vscode
 data
 !data/*.csv
+*.json
