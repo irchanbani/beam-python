@@ -11,8 +11,10 @@ import config
 class FilterCategory(beam.DoFn):
     def process(self, element, *args, **kwargs):
         if element["category"] == "news":
+            logging.info("data: {}".format(element))
             yield element
         else:
+            logging.error("failed: {}".format(element))
             yield beam.pvalue.TaggedOutput("failed", element)
 
 
